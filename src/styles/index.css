@@ -103,6 +103,20 @@ a:hover{
   display: none;
 }
 
+/* main */
+
+main{
+  background-image: url(../assets/background.2.jpeg);
+  background-position: center;
+  background-size: cover;
+  height: calc(100vh - 80px);
+  overflow: hidden;
+}
+
+
+
+
+
 /* MOBILE MENU */
 
 @media (max-width: 768px) {
