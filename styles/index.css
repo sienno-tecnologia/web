@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 87.5%;
+  }
+}
+
+@media (max-width: 1024px) {
+  html {
+    font-size: 93.75%;
+  }
+}
+
+:root {
+  --lavender: #4e3165;
+  --purple: #722c5c;
+  --red600: #ce1f45;
+  --white: #ffffff;
+}
