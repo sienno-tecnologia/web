@@ -37,6 +37,10 @@ a {
   font: inherit;
 }
 
+a:hover{
+  color: var(--red600);
+}
+
 .page-header {
   width: 100%;
   max-height: 12vh;
