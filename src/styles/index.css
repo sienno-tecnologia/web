@@ -160,7 +160,7 @@ section.home .cards{
   display: flex;
 }
 
-section.home .cards {
+section.home .cards .card {
    min-height: 350px;
     width: 280px;
     height: 100%;
@@ -169,23 +169,8 @@ section.home .cards {
     margin: 0 10px;
 }
 
-section.home .cards .card{
-  min-height: 350px;
-   width: 280px;
-   height: 100%;
-   display: inline-block;
-   background-color:var(--purple);
-   margin: 0 10px;
-}
 
-section.home .cards .card{
-  min-height: 350px;
-   width: 280px;
-   height: 100%;
-   display: inline-block;
-   background-color:var(--purple);
-   margin: 0 10px;
-}
+
 
 
 
