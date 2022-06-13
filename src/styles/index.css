@@ -160,7 +160,7 @@ section.home .cards{
   display: flex;
 }
 
-section.home .cards .{
+section.home .cards {
    min-height: 350px;
     width: 280px;
     height: 100%;
