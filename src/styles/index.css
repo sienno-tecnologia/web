@@ -160,14 +160,34 @@ section.home .cards{
   display: flex;
 }
 
-section.home .cards .card{
-  min-height: 350px;
+section.home .cards .{
+   min-height: 350px;
     width: 280px;
     height: 100%;
     display: inline-block;
     background-color:var(--purple);
     margin: 0 10px;
 }
+
+section.home .cards .card{
+  min-height: 350px;
+   width: 280px;
+   height: 100%;
+   display: inline-block;
+   background-color:var(--purple);
+   margin: 0 10px;
+}
+
+section.home .cards .card{
+  min-height: 350px;
+   width: 280px;
+   height: 100%;
+   display: inline-block;
+   background-color:var(--purple);
+   margin: 0 10px;
+}
+
+
 
 section.home .cards .card .title{
   font-family: "Open Sans";
