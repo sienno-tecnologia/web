@@ -203,6 +203,23 @@ section.home .cards .card .descrição{
 
 }
 
+/* Mobile cards*/
+ @media (min-width:200px) and (max-width:905px){
+  
+section.home .cards{
+    max-width: 880px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+
+ section.home .cards .card{
+  margin: 10px;
+ }
+
+ }
+
 
 
 
