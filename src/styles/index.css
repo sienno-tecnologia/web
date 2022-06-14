@@ -135,6 +135,22 @@ section.banner p.texto {
 
 }
 
+/* REUSABLE */
+
+.title {
+  font-size: clamp(2.5rem, 5vw, 3rem);
+  font-family: 'Open Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding: 1rem 0px;
+  font-weight: 900;
+  line-height: 1.1;
+}
+
+.base-section {
+  max-width: 1300px;
+  padding: 1rem;
+  margin-inline: auto;
+}
+
 /* section home*/
 
 section.home {
@@ -147,12 +163,10 @@ section.home .area {
   margin: auto;
 }
 
-section.home .texto {
+section.home .title {
   color: white;
-  font-size: 3.5rem;
   font-family: 'League Spartan', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  padding: 1rem 0px;
-  text-align: center;
+ 
 }
 
 
@@ -185,6 +199,7 @@ section.home .cards .card .title {
   text-align: center;
   margin-bottom: 2.5rem;
 }
+
 
 section.home .cards .card .descrição {
   font-family: "Open Sans";
@@ -335,4 +350,112 @@ section.home .button-red {
     height: 80%;
     gap: 2rem;
   }
+}
+
+/* PILAR INFORMATION */
+
+.pilar-information {
+  max-width: 1300px;
+  padding: 1rem;
+  margin-inline: auto;
+}
+
+.pilar-information .title {
+  margin-bottom: 1rem;
+}
+
+.pilar-information p {
+  font-family: "Open Sans";
+  font-weight: 500;
+  color: var(--lavender);
+  font-size: 1.25rem;
+}
+
+.pilar-information .text {
+  width: 50%;
+}
+
+.pilar-information p:first-child {
+  margin-bottom: 1rem;
+}
+
+.pilar-information .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+
+}
+
+.pilar-information .img-box {
+  width: 100%;
+  max-width: 600px;
+  aspect-ratio: 16 / 9;
+  background-color: var(--lavender);
+  border-radius: 10px;
+}
+
+@media (max-width: 1090px) {
+  .pilar-information p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .pilar-information .container {
+    flex-direction: column-reverse;
+  }
+
+  .pilar-information .imgbox, .pilar-information .text {
+    max-width: 600px;
+    width: 100%;
+    display: block;
+  }
+
+  .pilar-information p {
+    font-size: 1.25rem;
+  }
+}
+
+
+/* CAROUSEL */
+
+
+.team-members .picture {
+  width: 350px;
+  aspect-ratio: 3/ 4;
+  background: var(--lavender);
+  border-radius: 10px;
+}
+
+.team-members .carousel-item {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.team-members .icons {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.team-members .icons img {
+  width: 2.25rem;
+  height: 2.25rem;
+}
+
+.team-members h1, .team-members h2, .team-members p {
+  font-family: 'Open Sans';
+}
+
+.team-members h1 {
+  color: var(--red600);
+  font-size:3rem;
+  font-weight: 900;
+}
+
+.team-members p {
+  font-family: var(--lavender);
+  font-size: clamp(1.25rem, 5vw, 1.5rem);
+  max-width: 350px;
 }
