@@ -1,14 +1,13 @@
 const openMenuButton = document.getElementById('open-menu-button')
 const closeMenuButton = document.getElementById('close-menu-button')
 const menu = document.getElementById('menu')
+const overlay = document.getElementById('overlay')
 
 function handleToggleMenu() {
-  if (menu.classList.contains('active')) {
-    menu.classList.remove('active')
-  } else {
-    menu.classList.add('active')
-  }
+  menu.classList.toggle('menu--active')
+  overlay.classList.toggle('overlay--active')
 }
 
 openMenuButton.addEventListener('click', handleToggleMenu)
 closeMenuButton.addEventListener('click', handleToggleMenu)
+overlay.addEventListener('click', handleToggleMenu)

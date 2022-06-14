@@ -21,7 +21,8 @@
   --purple: #722c5c;
   --red600: #ce1f45;
   --white: #ffffff;
-  --shadow: #e7e7e7;
+  --shadow: #5a5a5a;
+  --black: #1c1c1c;
 }
 
 
@@ -37,7 +38,7 @@ header a {
   font: inherit;
 }
 
-header a:hover{
+header a:hover {
   color: var(--red600);
 }
 
@@ -93,6 +94,7 @@ header a:hover{
 
 .page-header a {
   font-size: 1.5rem;
+  font-weight: 600;
 }
 
 .open-menu-button {
@@ -106,135 +108,151 @@ header a:hover{
 
 /* section banner*/
 
-section.banner{
+section.banner {
   background-image: url(../assets/background.2.jpeg);
   background-position: center;
   background-size: cover;
-  height: calc(100vh );
+  height: calc(100vh);
   overflow: hidden;
+  display: flex;
+  align-items: center;
 }
 
-section.banner .area{
-  max-width: 1100px;
-  margin: auto;
+section.banner .area {
+  max-width: 1600px;
+
 }
 
-
-
-
-section.banner p.texto{
-  font-size: 50px;
+section.banner p.texto {
+  font-size: clamp(3rem, 7vw, 5.5rem);
   color: white;
   font-family: 'League Spartan', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: 900;
-  padding: 70px 90px;
   margin-top: 100px;
+  padding-left: min(100px, 5vw);
+  padding-right: 1rem;
   line-height: 100%;
- 
+
 }
 
 /* section home*/
 
-section.home{
+section.home {
   background-color: var(--lavender);
-  padding: 40px;
+  padding: 2rem 1rem;
 }
 
-section.home .area{
-  max-width: 1100px;
+section.home .area {
+  max-width: 1200px;
   margin: auto;
 }
 
-section.home .texto{
+section.home .texto {
   color: white;
-  font-size: 40px;
-  font-family: 'League Spartan', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+  font-size: 3.5rem;
+  font-family: 'League Spartan', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding: 1rem 0px;
   text-align: center;
-  padding: 15px 0px;
 }
 
 
-section.home .cards{
-  max-width: 880px;
+section.home .cards {
   margin: auto;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
 
 section.home .cards .card {
-   min-height: 350px;
-    width: 280px;
-    height: 100%;
-    display: inline-block;
-    background-color:var(--purple);
-    margin: 0 10px;
+  width: 100%;
+  max-width: 320px;
+  margin: 1rem;
+  background-color: var(--purple);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+  border-radius: 10px;
 }
 
-
-
-
-
-
-section.home .cards .card .title{
+section.home .cards .card .title {
   font-family: "Open Sans";
   color: white;
   font-weight: bolder;
+  font-size: 2rem;
   text-align: center;
-  padding: 10px 0;
-  margin-bottom: 40px;
-
+  margin-bottom: 2.5rem;
 }
-section.home .cards .card .descrição{
+
+section.home .cards .card .descrição {
   font-family: "Open Sans";
   color: white;
   font-weight: 900;
   text-align: center;
-  padding: 10px 0;
   font-size: 20px;
   margin-top: 180px;
 }
- 
-.card a{
-   display: inline-block;
-    text-decoration: none;
-    color: var(--lavender);
-    font-weight: 900;
-    background-color: rgb(255, 255, 255);
-    padding: 10px 30px;
-    font-size: 20px;
-    text-transform: uppercase;
-    margin-top: 10px;
-    margin-left: 56px;
 
-
+section.home .card a {
+  font-family: 'Open Sans';
+  text-decoration: none;
+  color: var(--lavender);
+  font-weight: 900;
+  background-color: rgb(255, 255, 255);
+  padding: 10px 25px;
+  text-transform: capitalize;
+  font-size: 2rem;
+  margin-top: 1.5rem;
+  text-align: center;
+  border-radius: 10px;
 }
 
-/* Mobile cards*/
- @media (min-width:200px) and (max-width:905px){
-  
-section.home .cards{
-    max-width: 880px;
-    margin: auto;
+section.home footer {
+  display: flex;
+  justify-content: flex-end;
+  padding-inline: 1.3rem;
+  max-width: 1150px;
+}
+
+section.home .button-red {
+  font-family: 'Open Sans';
+  border: none;
+  background: var(--red600);
+  color: var(--white);
+  padding: 13px 55px;
+  text-transform: capitalize;
+  font-size: 2rem;
+  border-radius: 10px;
+  font-weight: 900;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+@media(max-width: 1120px) {
+  section.home footer {
     display: flex;
-    flex-direction: column;
-    align-items: center;
- }
-
- section.home .cards .card{
-  margin: 10px;
- }
-
- }
-
-
-
-
-
-
-
-
-
+    justify-content: center;
+    padding-inline: 1.3rem;
+  }
+}
 
 /* MOBILE MENU */
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: var(--black);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 300ms;
+}
+
+.overlay.overlay--active {
+  pointer-events: all;
+  opacity: 0.25;
+}
 
 @media (max-width: 768px) {
   .menu {
@@ -244,10 +262,13 @@ section.home .cards{
     top: 0;
     bottom: 0;
     transform: translateX(101%);
-    transition: transform 500ms;
+    transition: transform 300ms;
     width: 100%;
     max-width: 75vw;
     padding: 2rem;
+
+    display: flex;
+    justify-content: center;
   }
 
   .close-menu-button {
@@ -261,10 +282,12 @@ section.home .cards{
     align-items: center;
     justify-content: center;
     position: absolute;
+    right: 1.5rem;
+    top: 2.5rem;
   }
 
 
-  .menu.active {
+  .menu.menu--active {
     transform: translateX(0);
   }
 
@@ -305,6 +328,11 @@ section.home .cards{
 
   .menu ul {
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
+    text-align: center;
+    height: 80%;
+    gap: 2rem;
   }
 }
