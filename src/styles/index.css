@@ -260,17 +260,62 @@ section.home .button-red {
 section.doacoes {
   background-color: var(--lavender);
   color: white;
+
   
 }
 
-section.doaçoes .area{
-  max-width: 1200px;
+section.doacoes .area{
+  max-width: 1100px;
+  margin: auto;
 }
 
-section.doaçoes{
+.texto1{
   font-family: 'League Spartan', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; ;
-  color: black
+  color: white;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 900;
+  padding: 30px 0px 10px 0px
 }
+
+.texto2{
+  text-align: center;
+  font-size: 20px;
+}
+
+section.doacoes .opcoes{
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+}
+
+
+
+section.doacoes .opcoes .opcao{
+  width: 100%;
+  max-width: 320px;
+  margin: 1rem;
+  background-color: var(--red600);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+  border-radius: 41x;
+  border: 3px solid white;
+
+}
+
+
+section.doacoes .opcoes .opcao img{
+  height: 110px;
+}
+
+
+
 
 
 
