@@ -25,9 +25,10 @@
   --black: #1c1c1c;
 }
 
-
 body {
-  font-family: 'League Spartan', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'League Spartan', system-ui, -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+    sans-serif;
   color: var(--lavender);
   overflow-x: hidden;
 }
@@ -121,26 +122,28 @@ section.banner {
 
 section.banner .area {
   max-width: 1600px;
-
 }
 
 section.banner p.texto {
   font-size: clamp(3rem, 7vw, 5.5rem);
   color: white;
-  font-family: 'League Spartan', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'League Spartan', system-ui, -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+    sans-serif;
   font-weight: 900;
   margin-top: 100px;
   padding-left: min(100px, 5vw);
   padding-right: 1rem;
   line-height: 100%;
-
 }
 
 /* REUSABLE */
 
 .title {
   font-size: clamp(2.5rem, 5vw, 3rem);
-  font-family: 'Open Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'Open Sans', system-ui, -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+    sans-serif;
   padding: 1rem 0px;
   font-weight: 900;
   line-height: 1.1;
@@ -166,10 +169,10 @@ section.home .area {
 
 section.home .title {
   color: white;
-  font-family: 'League Spartan', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
- 
+  font-family: 'League Spartan', system-ui, -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+    sans-serif;
 }
-
 
 section.home .cards {
   margin: auto;
@@ -193,7 +196,7 @@ section.home .cards .card {
 }
 
 section.home .cards .card .title {
-  font-family: "Open Sans";
+  font-family: 'Open Sans';
   color: white;
   font-weight: bolder;
   font-size: 2rem;
@@ -201,9 +204,8 @@ section.home .cards .card .title {
   margin-bottom: 2.5rem;
 }
 
-
 section.home .cards .card .descrição {
-  font-family: "Open Sans";
+  font-family: 'Open Sans';
   color: white;
   font-weight: 900;
   text-align: center;
@@ -232,7 +234,7 @@ section.home footer {
   max-width: 1150px;
 }
 
-section.home .button-red {
+.button-red {
   font-family: 'Open Sans';
   border: none;
   background: var(--red600);
@@ -246,7 +248,7 @@ section.home .button-red {
   margin-top: 1rem;
 }
 
-@media(max-width: 1120px) {
+@media (max-width: 1120px) {
   section.home footer {
     display: flex;
     justify-content: center;
@@ -254,50 +256,45 @@ section.home .button-red {
   }
 }
 
-
 /* Doações*/
 
 section.doacoes {
   background-color: var(--lavender);
   color: white;
-
-  
 }
 
-section.doacoes .area{
+section.doacoes .area {
   max-width: 1100px;
   margin: auto;
 }
 
-.texto1{
-  font-family: 'League Spartan', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; ;
+.texto1 {
+  font-family: 'League Spartan', system-ui, -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+    sans-serif;
   color: white;
   text-align: center;
   font-size: 50px;
   font-weight: 900;
   padding: 40px 0px 10px 0px;
- 
 }
 
-.texto2{
+.texto2 {
   text-align: center;
   font-size: 20px;
   margin: 1rem 0;
 }
 
-section.doacoes .opcoes{
+section.doacoes .opcoes {
   margin: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 1rem;
-
 }
 
-
-
-section.doacoes .opcoes .opcao{
+section.doacoes .opcoes .opcao {
   width: 100%;
   max-width: 320px;
   margin: 1rem;
@@ -308,23 +305,21 @@ section.doacoes .opcoes .opcao{
   padding: 1rem;
   border-radius: 30px;
   border: 9px solid white;
-
 }
 
-section.doacoes .opcoes .opcao img{
+section.doacoes .opcoes .opcao img {
   height: 138px;
   margin-top: 4rem;
   margin-bottom: 2rem;
 }
 
-
-section.doacoes .opcoes .opcao  h1{
+section.doacoes .opcoes .opcao h1 {
   margin-top: 1rem;
   text-transform: uppercase;
   font-weight: 500;
 }
 
-section.doacoes .opcoes .opcao .bnt-branco{
+section.doacoes .opcoes .opcao .bnt-branco {
   font-family: 'Open Sans';
   text-decoration: none;
   color: var(--lavender);
@@ -337,10 +332,9 @@ section.doacoes .opcoes .opcao .bnt-branco{
   text-align: center;
   border-radius: 5px;
   text-transform: uppercase;
-
 }
 
-section.doacoes .opcoes .opcao .bnt-transparente{
+section.doacoes .opcoes .opcao .bnt-transparente {
   font-family: 'Open Sans';
   text-decoration: none;
   color: white;
@@ -353,23 +347,7 @@ section.doacoes .opcoes .opcao .bnt-transparente{
   text-align: center;
   border-radius: 5px;
   border: white 3px solid;
-  
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* MOBILE MENU */
 
@@ -418,7 +396,6 @@ section.doacoes .opcoes .opcao .bnt-transparente{
     right: 1.5rem;
     top: 2.5rem;
   }
-
 
   .menu.menu--active {
     transform: translateX(0);
@@ -483,7 +460,7 @@ section.doacoes .opcoes .opcao .bnt-transparente{
 }
 
 .pilar-information p {
-  font-family: "Open Sans";
+  font-family: 'Open Sans';
   font-weight: 500;
   color: var(--lavender);
   font-size: 1.25rem;
@@ -502,7 +479,6 @@ section.doacoes .opcoes .opcao .bnt-transparente{
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
-
 }
 
 .pilar-information .img-box {
@@ -524,7 +500,8 @@ section.doacoes .opcoes .opcao .bnt-transparente{
     flex-direction: column-reverse;
   }
 
-  .pilar-information .imgbox, .pilar-information .text {
+  .pilar-information .imgbox,
+  .pilar-information .text {
     max-width: 600px;
     width: 100%;
     display: block;
@@ -535,9 +512,7 @@ section.doacoes .opcoes .opcao .bnt-transparente{
   }
 }
 
-
 /* CAROUSEL */
-
 
 .team-members .picture {
   width: 350px;
@@ -562,13 +537,15 @@ section.doacoes .opcoes .opcao .bnt-transparente{
   height: 2.25rem;
 }
 
-.team-members h1, .team-members h2, .team-members p {
+.team-members h1,
+.team-members h2,
+.team-members p {
   font-family: 'Open Sans';
 }
 
 .team-members h1 {
   color: var(--red600);
-  font-size:3rem;
+  font-size: 3rem;
   font-weight: 900;
 }
 
@@ -576,4 +553,89 @@ section.doacoes .opcoes .opcao .bnt-transparente{
   font-family: var(--lavender);
   font-size: clamp(1.25rem, 5vw, 1.5rem);
   max-width: 350px;
+}
+
+/* donation */
+
+.donation {
+  background: var(--lavender);
+  color: var(--white);
+  width: 100%;
+  padding-top: clamp(2rem, 5vh, 100px);
+}
+
+.donation .title {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.donation p {
+  font-family: 'Open Sans';
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+
+.donation .text {
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem
+}
+
+
+.donation .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem;
+  max-width: 1300px;
+  margin-inline: auto;
+}
+
+.donation .container h2 {
+  font-size: 2.25rem;
+  margin-bottom: 1rem;
+}
+
+.donation .img-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.donation .img-box .button-red {
+  text-transform: uppercase;
+  padding: 0.5rem 1.5rem;
+  font-size: 2.5rem;
+}
+
+.donation img {
+  width: 100%;
+  max-width: 375px;
+}
+
+
+@media (max-width: 1090px) {
+  .donation p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .donation .container {
+    flex-direction: column-reverse;
+  }
+
+  .donation .imgbox,
+  .donation .text {
+    max-width: 600px;
+    width: 100%;
+    display: block;
+  }
+
+  .donation p {
+    font-size: 1.25rem;
+  }
 }
