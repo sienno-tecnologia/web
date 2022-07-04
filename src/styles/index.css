@@ -53,6 +53,7 @@ header a:hover {
   align-items: center;
   padding: 1.25rem 0;
   padding-left: 3vw;
+  z-index: 99;
   position: fixed;
 }
 
@@ -122,17 +123,23 @@ section.banner {
 
 section.banner .area {
   max-width: 1600px;
+  padding-left: min(100px, 5vw);
+}
+
+section.banner span {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: var(--white);
 }
 
 section.banner p.texto {
-  font-size: clamp(3rem, 7vw, 5.5rem);
+  font-size: clamp(2.5rem, 6vw, 5rem);
   color: white;
   font-family: 'League Spartan', system-ui, -apple-system, BlinkMacSystemFont,
     'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
     sans-serif;
   font-weight: 900;
   margin-top: 100px;
-  padding-left: min(100px, 5vw);
   padding-right: 1rem;
   line-height: 100%;
 }
@@ -151,7 +158,7 @@ section.banner p.texto {
 
 .base-section {
   max-width: 1300px;
-  padding: 1rem;
+  padding: 4rem 1rem;
   margin-inline: auto;
 }
 
@@ -163,7 +170,7 @@ section.home {
 }
 
 section.home .area {
-  max-width: 1200px;
+  max-width: 1300px;
   margin: auto;
 }
 
@@ -172,6 +179,7 @@ section.home .title {
   font-family: 'League Spartan', system-ui, -apple-system, BlinkMacSystemFont,
     'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
     sans-serif;
+  text-align: center;
 }
 
 section.home .cards {
@@ -186,22 +194,40 @@ section.home .cards {
 section.home .cards .card {
   width: 100%;
   max-width: 320px;
+  text-align: left;
   margin: 1rem;
-  background-color: var(--purple);
   display: flex;
   align-items: center;
+  justify-content: space-between;
   flex-direction: column;
   padding: 1rem;
+  position: relative;
+  background: rgba(206, 31, 69, 0.527);
+  overflow: hidden;
   border-radius: 10px;
+  height: 400px;
 }
+
+section.home .cards .card h1,
+a {
+  z-index: 10;
+}
+
+section.home .card img {
+  position: absolute;
+  inset: 0;
+  opacity: 0.5;
+}
+
+
 
 section.home .cards .card .title {
   font-family: 'Open Sans';
   color: white;
   font-weight: bolder;
-  font-size: 2rem;
-  text-align: center;
+  font-size: 1.5rem;
   margin-bottom: 2.5rem;
+  text-align: left;
 }
 
 section.home .cards .card .descrição {
@@ -451,7 +477,6 @@ section.doacoes .opcoes .opcao .bnt-transparente {
 
 .pilar-information {
   max-width: 1300px;
-  padding: 1rem;
   margin-inline: auto;
 }
 
@@ -483,7 +508,7 @@ section.doacoes .opcoes .opcao .bnt-transparente {
 
 .pilar-information .img-box {
   width: 100%;
-  max-width: 600px;
+  max-width: 500px;
   aspect-ratio: 16 / 9;
   background-color: var(--lavender);
   border-radius: 10px;
@@ -515,8 +540,8 @@ section.doacoes .opcoes .opcao .bnt-transparente {
 /* CAROUSEL */
 
 .team-members .picture {
-  width: 350px;
-  aspect-ratio: 3/ 4;
+  width: 300px;
+  aspect-ratio: 3 / 4;
   background: var(--lavender);
   border-radius: 10px;
 }
@@ -526,6 +551,8 @@ section.doacoes .opcoes .opcao .bnt-transparente {
   align-items: center;
   gap: 1.5rem;
 }
+
+
 
 .team-members .icons {
   display: flex;
@@ -544,15 +571,27 @@ section.doacoes .opcoes .opcao .bnt-transparente {
 }
 
 .team-members h1 {
+  line-height: 1;
+}
+
+.team-members h1 {
   color: var(--red600);
   font-size: 3rem;
   font-weight: 900;
 }
 
+.team-members h2 {
+  font-size: 1.25rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
 .team-members p {
   font-family: var(--lavender);
-  font-size: clamp(1.25rem, 5vw, 1.5rem);
+  font-size: clamp(1.35rem, 5vw, 1.6rem);
   max-width: 350px;
+  margin-top: 1.5rem;
+  line-height: 1.2;
 }
 
 /* donation */
@@ -638,4 +677,109 @@ section.doacoes .opcoes .opcao .bnt-transparente {
   .donation p {
     font-size: 1.25rem;
   }
+}
+
+
+
+/* JOIN SECTION */
+
+
+.join-section h1 {
+  color: var(--red600);
+  font-size: 3rem;
+}
+
+.join-section p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.join-section .content {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  gap: 2rem;
+}
+
+.join-section .content h1 {
+  padding-top: 0;
+}
+
+.join-section .ods {
+  display: grid;
+  grid-template-areas:
+    'image image'
+    'button button';
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  justify-items: center;
+}
+
+.join-section img {
+  width: 200px;
+}
+
+.join-section .button-red {
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'League Spartan', sans-serif;
+  font-weight: 600;
+  grid-area: button;
+  margin: 0;
+}
+
+@media (max-width: 1024px) {
+  .join-section .content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .join-section .ods {
+    max-width: 480px;
+  }
+
+  .join-section img {
+    width: 100%;
+    max-width: 200px;
+  }
+}
+
+/* PARTICIPANTS */
+
+.participants {
+  text-align: center;
+}
+
+.participants h1 {
+  color: var(--red600);
+}
+
+.participants .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 4rem;
+}
+
+.participants .grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  justify-items: center;
+  row-gap: 5rem;
+  column-gap: 5rem;
+}
+
+.participants .item {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.participants .example {
+  width: 75px;
+  height: 75px;
+  background: #D9D9D9;
 }
