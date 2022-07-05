@@ -70,14 +70,14 @@ header a:hover {
 }
 
 .page-header img {
-  width: 6rem;
-  height: 6rem;
+  width: 5rem;
+  height: 5rem;
   margin-right: 0.5rem;
 }
 
 .logo h1 {
   color: var(--red600);
-  font-size: 2.75rem;
+  font-size: 2.5rem;
 }
 
 .logo h2 {
@@ -111,7 +111,7 @@ header a:hover {
 /* section banner*/
 
 section.banner {
-  background-image: url(../assets/background.2.jpeg);
+  background-image: url(../assets/background.webp);
   object-fit: cover;
   background-position: center;
   background-size: cover;
@@ -208,6 +208,12 @@ section.home .cards .card {
   height: 400px;
 }
 
+@media (max-width: 450px) {
+  section.home .cards .card {
+    margin: 0;
+  }
+}
+
 section.home .cards .card h1,
 a {
   z-index: 10;
@@ -267,7 +273,7 @@ section.home footer {
   color: var(--white);
   padding: 13px 55px;
   text-transform: capitalize;
-  font-size: 2rem;
+  font-size: 1.75rem;
   border-radius: 10px;
   font-weight: 900;
   cursor: pointer;
@@ -652,7 +658,7 @@ section.doacoes .opcoes .opcao .bnt-transparente {
 
 .donation img {
   width: 100%;
-  max-width: 375px;
+  max-width: 335px;
 }
 
 
@@ -665,6 +671,7 @@ section.doacoes .opcoes .opcao .bnt-transparente {
 @media (max-width: 992px) {
   .donation .container {
     flex-direction: column-reverse;
+    gap: 3rem;
   }
 
   .donation .imgbox,
