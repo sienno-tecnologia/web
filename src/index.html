@@ -58,10 +58,7 @@
 
     <section class="banner">
       <div class="area">
-        <p class="texto">
-          “Às vezes, o que sobra consegue crescer melhor do que a geração
-          anterior, se lhe for dada uma chance.”
-        </p>
+        <p class="texto">“Invista bem, invista com cuidado, invista STEC”</p>
       </div>
     </section>
 
@@ -102,24 +99,23 @@
     </section>
 
     <section class="base-section pilar-information" id="sobre">
-      <h1 class="title">
+      <h1 class="title emphasis">
         "Comunidade do Pilar, em Recife (PE), luta por reconhecimento desde a
         sua fundação"
       </h1>
       <div class="container">
         <div class="text">
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt
-            voluptates sequi modi sunt, eligendi labore molestiae illum suscipit
-            atque odio veniam fuga adipisci! Quis vel libero sunt deleniti
-            distinctio earum.
+            “Após a restauração das invasões holandesas no Recife, entre as
+            ruínas do Forte de São João Batista do Brum e da Igreja de Nossa
+            Senhora do Pilar, a menos de um quilômetro do Marco Zero, uma
+            comunidade com pessoas que trabalhavam no Porto foi se formando.
           </p>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci
-            dolorum ipsum officiis reiciendis neque iure, unde aut labore
-            corrupti provident deserunt odit porro necessitatibus quam explicabo
-            in saepe? Reprehenderit, eaque!Lorem porro necessitatibus quam
-            explicabo in saepe? Reprehenderit, eaque!Lorem
+            O lugar por muito tempo era chamado de C, já que até 1630, o Recife
+            oficialmente terminava no início da Rua do Bom Jesus. Mesmo com o
+            conflito, a comunidade permaneceu na região, mas com o nome de
+            Pilar, em referência a santa padroeira da igreja.” - brasildefatospe
           </p>
         </div>
         <!-- será substituida por imagem de vdd -->
@@ -130,26 +126,16 @@
     <section class="team-members base-section">
       <div class="title">Integrantes do Projeto</div>
 
-      <div class="carousel" id="carousel">
-        <div class="carousel-item" id="carousel-item">
-          <div class="picture"></div>
-          <div class="content">
-            <h1>Nome</h1>
-            <h2>Função</h2>
-            <div class="icons">
-              <img src="./assets/github.webp" alt="github" />
-              <img src="./assets/linkedin.webp" alt="linkedin" />
-            </div>
-            <div class="github"></div>
-            <div class="linkedin"></div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis,
-              sed porro similique assumenda illum nostrum sequi corrupti ipsa
-              enim.
-            </p>
-          </div>
-        </div>
+      <div class="controls">
+        <button class="scroll-left" id="scroll-left-btn">
+          <img src="./assets/seta-esquerda.svg" alt="seta esquerda" />
+        </button>
+        <button class="scroll-right" id="scroll-right-btn">
+          <img src="./assets/seta-direita.svg" alt="seta direita" />
+        </button>
       </div>
+
+      <div class="carousel" id="carousel"></div>
     </section>
 
     <section class="doacoes" id="doações">
@@ -168,16 +154,13 @@
           </div>
           <div class="opcao">
             <h1>Doe Eletrônicos</h1>
-            <img
-              src="assets/dispositivos-eletronicos.svg"
-              alt="dispositivos eletronicos"
-            />
+            <img src="assets/Eletro-P.svg" alt="dispositivos eletronicos" />
             <a class="bnt-transparente" href="#"> saiba o porquê </a>
             <a class="bnt-branco" href="#">Doe aqui</a>
           </div>
           <div class="opcao">
             <h1>Doe dinheiro</h1>
-            <img src="assets/saco-de-dinheiro.svg" alt="saco de dinheiro" />
+            <img src="assets/Money-P.svg" alt="saco de dinheiro" />
             <a class="bnt-transparente" href="#"> saiba o porquê</a>
             <a class="bnt-branco" href="#"> Doe aqui</a>
           </div>
@@ -203,7 +186,7 @@
         </div>
         <!-- será substituida por imagem de vdd -->
         <div class="img-box">
-          <img src="./assets/comida-saudavel.svg" alt="comida saudável" />
+          <img src="./assets/comida-saudavel-b.svg" alt="comida saudável" />
           <button class="button">doe aqui</button>
         </div>
       </div>
@@ -228,7 +211,7 @@
         <!-- será substituida por imagem de vdd -->
         <div class="img-box">
           <img
-            src="./assets/dispositivos-eletronicos.svg"
+            src="./assets/eletronicos-b.svg"
             alt="dispositivos eletrônicos"
           />
           <button class="button">doe aqui</button>
@@ -237,7 +220,7 @@
     </section>
 
     <section class="donation">
-      <h1 class="title">Doação de Eletrônicos</h1>
+      <h1 class="title">Doação de Dinheiro</h1>
       <div class="container">
         <div class="text">
           <h2>Porquê doar Dinheiro ?</h2>
@@ -254,7 +237,7 @@
         </div>
         <!-- será substituida por imagem de vdd -->
         <div class="img-box">
-          <img src="./assets/saco-de-dinheiro.svg" alt="saco de dinheiro" />
+          <img src="./assets/money-b.svg" alt="saco de dinheiro" />
           <button class="button">doe aqui</button>
         </div>
       </div>
@@ -264,8 +247,9 @@
       <h1 class="title">Faça parte do projeto</h1>
       <p>
         Você pode ajudar o projeto de diversas maneiras, nos acompanhe pelo
-        insta @siennotec e confira nossas novidades, se inscreva no nosso site e
-        saiba tudo que estamos fazendo pelo recebendo um email.
+        insta <span class="emphasis">@siennotec</span> e confira nossas
+        novidades, se inscreva no nosso site e saiba tudo que estamos fazendo
+        pelo recebendo um <span class="emphasis">email</span>.
       </p>
       <div class="content">
         <div>
