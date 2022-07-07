@@ -178,7 +178,8 @@ section.banner p.texto span {
 
 .base-section {
   max-width: 1300px;
-  padding: 8.5rem 1rem;
+  padding-inline: 1rem;
+  padding-top: 6.5rem;
   margin-inline: auto;
 }
 
@@ -528,6 +529,20 @@ section.doacoes .opcoes .opcao .bnt-transparente {
 .pilar-information {
   max-width: 1300px;
   margin-inline: auto;
+}
+
+.pilar-information.team {
+  padding-bottom: 6.5rem;
+}
+
+.pilar-information.team p {
+  font-size: 1.5rem;
+}
+
+.pilar-information.team .img-logo {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 10px;
 }
 
 .pilar-information .title {
