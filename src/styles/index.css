@@ -117,19 +117,30 @@ header a:hover {
 /* section banner*/
 
 section.banner {
+  background-image: url('../assets/background.jpg');
   object-fit: cover;
   background-position: center;
   background-size: cover;
-  background: var(--lavender);
   height: calc(100vh);
   overflow: hidden;
   display: flex;
   align-items: center;
+  position: relative;
 }
+
+.banner .overlay {
+  position: absolute;
+  inset: 0;
+  background-color: #5E248B;
+  opacity: 0.7;
+  z-index: 2;
+}
+
 
 section.banner .area {
   max-width: 1600px;
   padding-left: min(100px, 5vw);
+  z-index: 3;
 }
 
 section.banner span {
@@ -138,7 +149,8 @@ section.banner span {
   color: var(--white);
 }
 
-section.banner p.texto {
+section.banner p.texto,
+section.banner p.texto span {
   font-size: clamp(2.5rem, 6vw, 5rem);
   color: white;
   font-family: 'League Spartan', system-ui, -apple-system, BlinkMacSystemFont,
@@ -149,6 +161,8 @@ section.banner p.texto {
   padding-right: 1rem;
   line-height: 100%;
 }
+
+
 
 /* REUSABLE */
 
